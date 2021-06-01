@@ -3,9 +3,8 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-provider "aws" {
-  profile = "tf-training-2"
-  alias = "aws-second"
+resource "aws_s3_bucket" "luxoft-training" {
+  bucket_prefix = "luxoft-adm-025-RANDOM"
 }
 
 terraform {
@@ -13,12 +12,6 @@ terraform {
     bucket = "luxoft-terraform-YOUR-RANDOM-STRING-tf"
     key = "tf-training.tfstate"
     region = "eu-central-1"
-
-    # Version 1:
-    # access_key = "..."
-    # secret_key = "..."
-
-    # Version 2
     profile = "tf-training"
   }
 }
