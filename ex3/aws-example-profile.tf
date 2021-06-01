@@ -3,8 +3,8 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-resource "aws_s3_bucket" "luxoft-training" {
-  bucket = "luxoft-adm-025-RANDOM"
+resource "random_string" "test" {
+  length = 10
 }
 
 terraform {
