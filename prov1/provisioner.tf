@@ -3,12 +3,12 @@ resource "null_resource" "test" {
   # ...
 
   provisioner "local-exec" {
-    command    = "echo 'You have to log new data'"
+    command    = "echo 'The special resource is creating'"
     on_failure = continue
   }
   provisioner "local-exec" {
     when    = destroy
-    command = "echo 'Destroy sub-resource infrastructure'"
+    command = "unexpected command"
     on_failure = fail
   }
 }
