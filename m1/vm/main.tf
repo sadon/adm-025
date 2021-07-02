@@ -1,14 +1,9 @@
-provider "aws" {
-  profile = "tf-training"
-  region = "eu-central-1"
-}
-
 resource "aws_instance" "web" {
-  instance_type = "t2.nano"
-  ami = "ami-043097594a7df80ec"
+  instance_type = var.vm_type
+  ami = var.ami
   key_name = aws_key_pair.tf-training.key_name
   tags = {
-    Name: "test"
+    Name: var.vm_name
   }
 }
 
@@ -18,7 +13,7 @@ resource "tls_private_key" "tf-training" {
 }
 
 resource "aws_key_pair" "tf-training" {
-  key_name = "tf-training-key"
+  key_name = var.keypair_name
   public_key = tls_private_key.tf-training.public_key_openssh
 
 }
