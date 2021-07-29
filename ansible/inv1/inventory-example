@@ -1,0 +1,5 @@
+[webservers]
+web-[01:05].example.com
+web-test-[06:10:2].example.com
+[dbservers]
+db-[c:f].example.com
