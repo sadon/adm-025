@@ -1,0 +1,11 @@
+---
+- name: Read Dev server
+  #hosts: my-aws-server
+  hosts: localhost
+
+  tasks:
+    #- debug: msg= "Your account will user AWS USER {{ aws_user_name }}"
+    - debug: var=aws_user_name
+    - name: Read AWS vars
+      register: aws_user_name
+      c: aws iam get-user --profile tf-training | jq '.User.UserName' -r

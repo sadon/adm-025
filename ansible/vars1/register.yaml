@@ -1,0 +1,11 @@
+---
+
+- name: Read Dev server
+  hosts: localhost
+
+  tasks:
+    - name: Check CPU acrchitecture
+      command: unmae -m
+      register: CPU_architecture
+    #- debug: var=CPU_architecture
+    - debug: var=result

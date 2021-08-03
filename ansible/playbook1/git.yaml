@@ -1,0 +1,21 @@
+---
+- name: Prepare Dev server
+  hosts: my-aws-server
+  become: true
+  strategy: debug
+
+  tasks:
+    - name: Install git
+      yum:
+        name: git
+        state: present
+    #- debug: var=hostvars
+
+    - name: Install Mysql
+      yum:
+        name: mysql-
+        state: present
+    - name: Upgrade all packages
+      yum:
+        name: '*'
+        state: latest

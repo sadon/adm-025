@@ -1,0 +1,10 @@
+---
+- name: Read Dev server
+  hosts: localhost
+
+  tasks:
+    - name: Check CPU acrchitecture
+      command: unae -m
+      register: CPU_architecture
+      ignore_errors: true
+    - debug: msg="You are using {{ CPU_architecture.stdout }} CPU architecture"

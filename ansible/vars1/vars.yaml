@@ -1,0 +1,8 @@
+vars:
+  server_name: log-analizer.example.com
+  log_path: /var/log/site-logs.log
+
+var_files:
+  - mysql.yaml
+  - nginx.yaml
+  - ec2.yaml
