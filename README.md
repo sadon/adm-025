@@ -1,4 +1,6 @@
 # adm-025
 
-[] test1
-[] test2
+## Progress:
+
+- [ ] test1
+- [x] test2
