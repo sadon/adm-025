@@ -2,5 +2,6 @@
 
 ## Progress:
 
-- [ ] test1
-- [x] test2
+- [ ] IaC overview
+- [ ] Terrafrom
+- [ ] Ansible
