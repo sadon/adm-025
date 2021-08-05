@@ -1,0 +1,6 @@
+---
+my-db:
+  host1:
+    login: admin
+    password: 123456
+
