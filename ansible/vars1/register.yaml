@@ -2,10 +2,12 @@
 
 - name: Read Dev server
   hosts: localhost
+  #strategy: debug
+  gather_facts: true
 
   tasks:
     - name: Check CPU acrchitecture
-      command: unmae -m
+      shell: uname -m
       register: CPU_architecture
-    #- debug: var=CPU_architecture
-    - debug: var=result
+    - debug: var={{CPU_architecture.stdout_lines[0] | length }}
+    - debug: var=ansible_*
