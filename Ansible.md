@@ -2,48 +2,46 @@
 
 
 base-themes
-- [ ] definition
-- [ ] text about...
-- [ ] examples in slides
-- [ ] examples for students (slide)
-- [ ] exercice complete in git
+- [_] definition
+- [_] text about...
+- [_] examples in slides
+- [_] examples for students (slide)
+- [_] exercice complete in git
 
 
 ## Ansible themes
 
 ### Intro
- - [ ] concept
- - [ ] examples with links, ~5 slides
- - [ ] version notice
- - [ ] _internal modules_
- - [ ] course limits
+ - [x] concept
+ - [x] version notice
 
 ### Playbooks and related
-- [ ] definition
-- [ ] YAML: 
-- [ ] YAML data types
-- [ ] playbook sctructure
-- [ ] Run playbook
+- [x] definition
+- [-] YAML & YAML data types 
+  > chapter
+- [x] playbook sctructure
+- [x] Run playbook
+- [x] strategies 
 - [ ] exersices*3
 
 ### Inventory 
-- [ ] Inventory: definition
-- [ ] variables
-- [ ] Merge rules (grouping)
+- [x] Inventory: definition
+- [x] variables
+- [x] Merge rules (grouping)
 - [ ] dynamic inventory
-- [ ] Inherit
-- [ ] example
-- [ ] exercise 
-
+- [x] Inherit
+- [x] example
 - [ ] & - + operators
-- [ ] example
-- [ ] exercise 
-- [ ] exercisedynamic inventory
+- [ ] exercise
+- [ ] exercise - module dynamic inventory
 
 ### Ansible variables
- - [ ] definition
- - [ ] vars
- - [ ] facts, exercise
+ - [x] definition
+ - [x] vars
+ - [?] facts
+ - [x] jinja
+ - [x] debug vars
+ - [ ]  exercise
 
 ### VMs run Practice NGINX?
 
@@ -81,6 +79,9 @@ base-themes
  - [ ] definition
  - [ ] bash module
 
+
+## Ansible galaxy
+- [x] ec2 module
 ## Ansible ec2
 - [ ] authentification
 - [ ] dynamic registry
@@ -88,10 +89,11 @@ base-themes
 - [ ] firewall
 - [ ] run instances
 
+
 ## Debug
-- [ ] module
-- [ ] dry-run
-- [ ] step by step
+- [x] module
+- [x] dry-run
+- [x] step by step
 - [ ] tags
 
 ## Ansible Tower
