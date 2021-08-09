@@ -46,12 +46,15 @@ base-themes
 ### VMs run Practice NGINX?
 
 ### Roles
-- [ ] basics
-- [ ] using in playbooks
-- [ ] roles ralationships
+- [x] basics
+- [x] using in playbooks
+- [x] ansible-galaxy roles provisioning 
+- [x] roles relationships
+
 #### Ansible galaxy
- - [ ] definition
- - [ ] web
+ - [x] definition
+ - [x] web
+
 
 ### Complex playbooks
 - [ ] filters
