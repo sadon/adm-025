@@ -11,7 +11,7 @@ provider "aws" {
   region = "eu-central-1"
 
   # Mandatory word
-  alias = "aws-second"
+  alias = "frankfurt-node"
 
   # Authorization: Version 2
   profile = "tf-training"
@@ -19,6 +19,6 @@ provider "aws" {
 }
 
 resource "null_resource" "second-provider-usage-example" {
-  provider = "aws.aws-second"
+  provider = "aws.frankfurt-node"
 }
 
