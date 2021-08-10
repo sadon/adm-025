@@ -12,3 +12,6 @@ resource "local_file" "test" {
     I visited ${var.visited_city} last year.
   EOT
 }
+
+
+locals {	prefix = "my-company"}

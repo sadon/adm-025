@@ -1,12 +1,5 @@
 # adm-025
 
-
-## Progress:
-
-- [ ] IaC overview
-- [ ] Terrafrom
-- [ ] Ansible
-
 ## Общее
 
 Слишком мало слайдов по теории
@@ -327,7 +320,7 @@ Main commands:
   это must have для dev, test, prod окружений - просто позволяет поднять ещё одно окружение
 
 79*:
-  - [ ] Как работать с р зными environment
+  - [ ] Как работать с разными environment
   1. разные AWS профили
   2. разные аргументы к модулям / project_name/prefix
   3. workspace
@@ -338,7 +331,7 @@ Main commands:
   <!-- - [x] Полезная утилита tfswitch https://tfswitch.warrensbox.com/ -->
 
 83:
-  - [x]backup you state -> your
+  - [x] backup you state -> your
 
 87:
   - [ ] пример - учебный, для поиграться и понять - нужен.

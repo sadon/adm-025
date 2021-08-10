@@ -75,7 +75,7 @@ base-themes
  - [ ]exersice?
    
 ### Antything else about ansible
- - [ ]facts caching
+ - [ ] facts caching
  - [ ] Redis
 
 ### Modules (by yourself)
@@ -110,3 +110,25 @@ base-themes
 
 ## Questions
 10-15
+
+pages лецкции exp
+L1 
+loops p18 
+all p14
+setup p 21
+vars p22 p68 73,76, 75
+roles p 28
+groups p33
+jinja p50
+handlers p56
+include /import p 133
+check p125 
+encrypt p 125
+loops p 136-137
+tags p 147 149
+
+molecule tests L2 p12
+debugger p69
+lint 84
+collections p 78
+p81?
