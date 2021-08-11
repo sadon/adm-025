@@ -14,4 +14,9 @@ resource "local_file" "test" {
 }
 
 
-locals {	prefix = "my-company"}
+locals {
+  prefix = "my-company"
+}
+
+
+
