@@ -1,4 +1,4 @@
-## Ex.8 p2: Create and connect to baked VM:
+## Ex.ec2-ssh: Create and connect to baked VM:
 
 1) `terraform apply `
 Show manually `terraform show`
