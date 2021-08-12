@@ -12,3 +12,7 @@ module "aws-vm" {
   keypair_name = "test-terraform-module"
   ami = "ami-043097594a7df80ec"
 }
+
+output "ssh-key" {
+  value = module.aws-vm.ssh-key
+}
