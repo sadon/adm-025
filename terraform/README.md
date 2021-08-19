@@ -27,6 +27,18 @@
   - [Workspaces](./wspace1)
   - [Version management](./ver1)
   - [Provisioners](./prov1)
-  - [Debugging](./debug1)    
-    
-    
+  + [Debugging](./debug1)    
+  
+
+
+### Default AWS Provider
+
+Default AWS provider setting below, add this line to each exercise:
+
+````
+# ./provider-aws.tf
+provider "aws" {
+ profile = "tf-training"
+ region = "eu-central-1"
+}
+````
