@@ -1,11 +1,11 @@
-# Exercises list
+# Exercises
 
 - Terraform providers management
-  - [Providers](./providers1/) 
+  + [Providers](./providers1/) 
 - Main commands:
-  - [Init](./init1)
+  + [Init](./init1) ?
 - State management:
-  - [Basics](./state1)
+  + [Basics](./state1)
   - [Moving resources](./state_mv1) 
   - [Delayed resource management](./state2)
   - [Remote-state](./remote-state1)
