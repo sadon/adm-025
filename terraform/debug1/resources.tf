@@ -1,8 +1,3 @@
-provider "aws" {
-  profile = "tf-training"
-  region = "eu-central-1"
-}
-
 resource "tls_private_key" "tf-training" {
   algorithm = "RSA"
   rsa_bits  = 4096
