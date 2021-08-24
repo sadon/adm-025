@@ -6,8 +6,8 @@
   + [Init](./init1) ?
 - State management:
   + [Basics](./state1)
-  - [Moving resources](./state_mv1) 
-  - [Delayed resource management](./state2)
+  + [Moving resources](./state_mv1) 
+  + [Delayed resource management](./state2)
   - [Remote-state](./remote-state1)
 - Variables:
   - [Definition methods](./vars1)
