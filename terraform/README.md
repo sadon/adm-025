@@ -3,7 +3,7 @@
 - Terraform providers management
   + [Providers](./providers1/) 
 - Main commands:
-  + [Init](./init1) ?
+  + **[Init](./init1)?**
 - State management:
   + [Basics](./state1)
   + [Moving resources](./state_mv1) 
@@ -13,7 +13,7 @@
   - [Definition methods](./vars1)
   - [Validation](./var-def1)
   - [Local](./locals1) variables
-  - [Outputs](./output1)
+  - **[Outputs](./output1)?**
 - Resource management
   - [Import](./import1)
   - [Replace](./replace1) resources
