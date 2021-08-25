@@ -13,7 +13,7 @@
   - [Definition methods](./vars1)
   - [Validation](./var-def1)
   - [Local](./locals1) variables
-  - **[Outputs](./output1)?**
+  + [Outputs](./output1)?
 - Resource management
   - [Import](./import1)
   - [Replace](./replace1) resources
@@ -26,7 +26,7 @@
   - [Lifecycle management](./lifecycle1)
   - [Workspaces](./wspace1)
   + [Version management](./ver1)
-  - [Provisioners](./prov1)
+  + [Provisioners](./prov1)
   + [Debugging](./debug1)    
   
 

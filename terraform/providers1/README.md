@@ -33,7 +33,7 @@ provider "aws" {
 ````
 # ./aws-providers.tf
 ...
-resource "null_resource" "second-provider-usage-example" {
-  provider = "aws.frankfurt-node"
+resource "aws_security_group" "my-group" {
+  provider = aws.frankfurt-node
 }
 ````
