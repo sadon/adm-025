@@ -15,8 +15,8 @@
   + [Local](./locals1) variables
   + [Outputs](./output1)?
 - Resource management
-  - [Import](./import1)
-  - [Replace](./replace1) resources
+  + [Import](./import1)
+  + [Replace](./replace1) resources
   - EC2 Instance: generate [ssh keypair](./ec2-ssh)
 - Terraform [modules](./m1)
 - Extended HCL syntax

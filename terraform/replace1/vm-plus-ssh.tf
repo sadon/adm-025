@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
   ami = "ami-043097594a7df80ec"
   key_name = aws_key_pair.tf-training.key_name
   tags = {
-    Name: "test"
+    Name: "adm-025-replace-example"
   }
 }
 
