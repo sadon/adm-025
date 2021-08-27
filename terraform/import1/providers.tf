@@ -2,7 +2,3 @@ provider "aws" {
   profile = "tf-training"
   region = "eu-central-1"
 }
-
-resource "aws_instance" "web" {
-
-}
