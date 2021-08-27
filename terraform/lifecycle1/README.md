@@ -46,7 +46,6 @@ Expected:
 
 5. Destroy infrastructure:
 
-
 comment lifecycle block:
 `#prevent_destroy = true`
    and run `terraform destroy`

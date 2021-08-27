@@ -12,7 +12,7 @@
 - Variables:
   - [Definition methods](./vars1)
   - [Validation](./var-def1)
-  - [Local](./locals1) variables
+  + [Local](./locals1) variables
   + [Outputs](./output1)?
 - Resource management
   - [Import](./import1)
