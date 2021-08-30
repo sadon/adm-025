@@ -24,7 +24,7 @@
   - [Dynamic](./dyn1)
 - Mics
   + [Lifecycle management](./lifecycle1)
-  - [Workspaces](./wspace1)
+  + [Workspaces](./wspace1)
   + [Version management](./ver1)
   + [Provisioners](./prov1)
   + [Debugging](./debug1)    
