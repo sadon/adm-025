@@ -1,10 +1,3 @@
-provider "aws" {
-  profile = "tf-training"
-  region  = "eu-central-1"
-}
-
-
-
 resource "aws_security_group" "web-tf-static" {
   name = "test-static-sg"
   tags = {Name:"test-static-sg"}

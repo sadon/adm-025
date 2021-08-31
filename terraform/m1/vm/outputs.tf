@@ -1,7 +1,5 @@
-output "ssh-key" {
-  #value = tls_private_key.tf-training.public_key_openssh
-  value = tls_private_key.tf-training.private_key_pem
-  sensitive = true
+output "ssh-public-key" {
+  value = tls_private_key.tf-training.public_key_openssh
 }
 
 output "vm-id" {

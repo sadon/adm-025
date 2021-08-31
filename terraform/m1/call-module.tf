@@ -14,5 +14,5 @@ module "aws-vm" {
 }
 
 output "ssh-key" {
-  value = module.aws-vm.ssh-key
+  value = module.aws-vm.ssh-public-key
 }

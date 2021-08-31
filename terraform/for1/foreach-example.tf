@@ -1,8 +1,3 @@
-provider "aws" {
-  profile = "tf-training"
-  region  = "eu-central-1"
-}
-
 locals {
   books = {
     "about-me.txt" : "I was born in 19XX. I live in default City.",
@@ -11,9 +6,14 @@ locals {
   }
 }
 
+resource "random_string" "suffix" {
+  length = 10
+  special = false
+  upper = false
+}
 
 resource "aws_s3_bucket" "test" {
-  bucket = "my-random-luxoft-bucket" #RANDOM
+  bucket = "luxoft-adm025-foreach-${random_string.suffix.result}"
 }
 
 resource "aws_s3_bucket_object" "my-books" {

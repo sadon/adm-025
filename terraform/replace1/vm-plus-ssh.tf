@@ -1,6 +1,7 @@
-provider "aws" {
-  profile = "tf-training"
-  region = "eu-central-1"
+resource "random_string" "suffix" {
+  length = 10
+  special = false
+  upper = false
 }
 
 resource "aws_instance" "web" {
@@ -18,8 +19,7 @@ resource "tls_private_key" "tf-training" {
 }
 
 resource "aws_key_pair" "tf-training" {
-  key_name = "tf-training-key"
+  key_name   = "tf-training-key-${random_string.suffix.result}"
   public_key = tls_private_key.tf-training.public_key_openssh
-
 }
 

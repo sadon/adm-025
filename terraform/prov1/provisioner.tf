@@ -5,7 +5,7 @@ resource "random_string" "random-suffix" {
 }
 
 resource "aws_s3_bucket" "my-config" {
-  bucket = "aws-luxoft-prov1-${random_string.random-suffix.result}-test"
+  bucket = "luxoft-adm025-prov1-${random_string.random-suffix.result}-test"
 }
 
 # Avoid custom touch file: require for "aws_s3_bucket_object.my-config['source'] attribute
