@@ -17,16 +17,16 @@
 - Resource management
   + [Import](./import1)
   + [Replace](./replace1) resources
-  + EC2 Instance: generate [ssh keypair](./ec2-ssh)
-- Terraform [modules](./m1)
+  +! EC2 Instance: generate [ssh keypair](./ec2-ssh)
+!+ Terraform [modules](./m1)
 - Extended HCL syntax
   - [For_each](./for1)
-  - [Dynamic](./dyn1)
+  -! [Dynamic](./dyn1)
 + Miscellaneous
   + [Lifecycle management](./lifecycle1)
   + [Workspaces](./wspace1)
   + [Version management](./ver1)
-  + [Provisioners](./prov1)
+  +! [Provisioners](./prov1)
   + [Debugging](./debug1)    
   
 

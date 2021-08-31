@@ -12,7 +12,6 @@ variable "ami" {
     condition     = can(regex("^ami\\-[0-9a-f]+$", var.ami))
     error_message = "Ami ID is incorrect. Valid example: 'ami-043097594a7df80ec'."
   }
-
 }
 
 variable "keypair_name" {
