@@ -13,10 +13,6 @@ resource "local_file" "test" {
   EOT
 }
 
-
 locals {
   prefix = "my-company"
 }
-
-
-

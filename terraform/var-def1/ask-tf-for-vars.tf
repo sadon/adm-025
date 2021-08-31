@@ -2,6 +2,7 @@
 
 variable "name" {
   description = "Your name"
+  type = string
   validation {
     condition = can(regex("^[A-Z]", var.name))
     error_message = "Your name starts with Capital letter."
@@ -19,13 +20,15 @@ variable "city" {
 
 variable "mobile" {
   type = number
-  #sensitive= true
+  sensitive= true
   validation {
     condition = can(len(var.mobile) < 15)
   }
 }
 
-variable "visited_city" {}
+variable "visited_city" {
+  type = string
+}
 
 resource "local_file" "test" {
   filename = "variables-testing.txt"
