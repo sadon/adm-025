@@ -10,8 +10,8 @@
   + [Delayed resource management](./state2)
   !+ [Remote-state](./remote-state1)
 - Variables:
-  - [Definition methods](./vars1)
-  - [Validation](./var-def1)
+  + [Definition methods](./vars1)
+  + [Validation](./var-def1)
   + [Local](./locals1) variables
   + [Outputs](./output1)?
 - Resource management

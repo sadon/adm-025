@@ -1,67 +1,54 @@
-1. Copy files from var1 exercise:
+1. Define local-file as resource:
 ````
 # ./ask-for-vars.tf
-#Run before: export TF_VAR_visited_city="Saint-Petersburg"
-
-variable "name" {}
-variable "city" {}
-variable "visited_city" {}
-
 resource "local_file" "test" {
   filename = "variables-testing.txt"
   content  = <<-EOT
     Hello, my name is ${var.name}.
     I live in ${var.city}.
     I visited ${var.visited_city} last year.
+    Please call ${var.mobile}
   EOT
 }
-
-locals {
-  prefix = "my-company"
-}
 ````
 
-2. Define Moscow as default city:
- ````
- variable "city" {
-  default = "Moscow"
-  ...
- ````
+2. The text above has no _var.city_ definition,
+so, create a config file with name **my-city.auto.tfvars**
+````
+# my-city.auto.tfvars
+city = "Moscow"
+````
+
+Actually Terraform will use mask *.auto.tfvars files for searching vars
+
+3. Define environment variables types, like here:
+````
+export TF_VAR_visited_city="Saint-Petersburg"
+````
+
+
+Notice: To setup environment variables from sh files (into external shell) 
+
+use `source <path-to-file>` construction
+
+4. Run 'terraform plan`
+Terraform will ask for var.name:
+````
+terraform plan
+var.name
+    Your name
+
+    Enter a value:
+````
+
+5. Rerun with var definition in command line
+`terraform plan -var name=YourName` 
    
-3. Define variables types, like here:
+6. Apply config and review result file: ex.:
 ````
-variable "city" {
-default = "Moscow"
-type = string
-...
-}
-variable "mobile" {
-type = number
-...
-}
-````
-   
-4. Add validation and error messages for **name** and **city**:
-````
-  validation {
-    condition = can(regex("^[A-Z]", var.name))
-    error_message = "Your name starts with Capital letter."
-  }
-````
+$cat ./variables-testing.txt
 
-Add mobile number validation:
+Hello, my name is Dmitry.
+I live in Moscow.
+I visited Saint-Petersburg last year.
 ````
-variable "mobile" {
-  type = number
-  validation {
-    condition = can(len(var.mobile) < 15)
-  }
-}
-````
-
-Add **sensitive** flag for the mobile field:
-
-
-5. Try to test validators.
-
-with `terraform plan`command
