@@ -4,6 +4,7 @@ terraform {
     # Replace by personal data
     key = "tf-training.tfstate"
     profile = "tf-training"
+    region = "eu-central-1"
   }
 }
 
