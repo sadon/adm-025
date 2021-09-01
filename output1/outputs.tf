@@ -8,7 +8,7 @@ output "VM-root-device" {
 }
 
 output "ip-address" {
-  value = aws_instance.web.private_ip
+  value = aws_instance.web.public_ip
 }
 
 output "ssh-public-key" {

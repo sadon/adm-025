@@ -11,15 +11,20 @@ provider "aws" {
 
 3. Review **.terraform** directory content, like here:
 ````
-tree ./.terraform
-   ./.terraform
-   └── providers
-   └── registry.terraform.io
-   └── hashicorp
-   └── aws
-   └── 3.54.0
-   └── darwin_amd64
-   └── terraform-provider-aws_v3.54.0_x5
+$ tree -a ./.terraform
+tree -a ./
+./
+├── .terraform
+│ └── providers
+│     └── registry.terraform.io
+│         └── hashicorp
+│             └── aws
+│                 └── 3.56.0
+│                     └── darwin_amd64
+│                         └── terraform-provider-aws_v3.56.0_x5
+├── .terraform.lock.hcl
+├── README.md
+└── aws-provider.tf
 
 6 directories, 1 file
 ````
@@ -27,13 +32,16 @@ tree ./.terraform
 4. Remove provider definition from the **./aws-providers.tf** file:
     `echo '' > ./aws-provider.tf`
    
-and clear **.terraform** folder
+5. and clear **.terraform** folder
    `rm -rf ./.terraform`
 
-5. Run `terraform init` command again, you will see:
+6. Run `terraform init` command again, you will see:
 ````
- tree ./.terraform
-./.terraform [error opening dir]
+tree -a ./
+./
+├── .terraform.lock.hcl
+├── README.md
+└── aws-provider.tf
 
-0 directories, 0 files
+0 directories, 3 files
 ````
