@@ -13,7 +13,7 @@
   + [Definition methods](./vars1)
   + [Validation](./var-def1)
   + [Local](./locals1) variables
-  + [Outputs](./output1)?
+  - [Outputs](./output1)
 + Resource management
   + [Import](./import1)
   + [Replace](./replace1) resources
@@ -21,7 +21,7 @@
 + Terraform [modules](./m1)
 - Extended HCL syntax
   - [For_each](./for1)
-  -! [Dynamic](./dyn1)
+  - [Dynamic](./dyn1)
 + Miscellaneous
   + [Lifecycle management](./lifecycle1)
   + [Workspaces](./wspace1)
