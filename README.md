@@ -3,7 +3,7 @@
 + Terraform providers management
   + [Providers](./providers1/) 
 + Main commands:
-  - [Init](./init1)
+  -(main idea?) [Init](./init1)
 + State management:
   + [Basics](./state1)
   + [Moving resources](./state_mv1) 
@@ -17,10 +17,10 @@
 + Resource management
   + [Import](./import1)
   + [Replace](./replace1) resources
-  + EC2 Instance: generate [ssh keypair](./ec2-ssh)
+  - (outgoing traffic)EC2 Instance: generate [ssh keypair](./ec2-ssh)
 + Terraform [modules](./m1)
 - Extended HCL syntax
-  - [For_each](./for1)
+  + [For_each](./for1)
   - [Dynamic](./dyn1)
 + Miscellaneous
   + [Lifecycle management](./lifecycle1)

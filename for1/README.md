@@ -1,3 +1,6 @@
+1. Create generic biography in locals, by example:
+
+````
 locals {
   books = {
     "about-me.txt" : "I was born in 19XX. I live in default City.",
@@ -5,13 +8,12 @@ locals {
     "my-friends.txt" : "My best friend - John "
   }
 }
+````
 
-resource "random_string" "suffix" {
-  length = 10
-  special = false
-  upper = false
-}
-
+2. So, It's time to add this info  into a bucket:
+Create HCL Code, like below:
+````
+...
 resource "aws_s3_bucket" "test" {
   bucket = "luxoft-adm025-without-foreach-${random_string.suffix.result}"
 }
@@ -29,20 +31,18 @@ resource "aws_s3_bucket_object" "my-family" {
   content      = local.books["my-family.txt"]
   content_type = "plain/text"
 }
+...
+````
 
-resource "aws_s3_bucket_object" "my-friends" {
-  bucket   = aws_s3_bucket.test.id
-  key          = "my-friends.txt"
-  content      = local.books["my-friends.txt"]
-  content_type = "plain/text"
-}
+3. Run `terraform apply` and review bucket content in AWS Console
+   
 
-# With for_each keyword
+4. Create code which will group `aws_s3_bucket_object` 
+Create new bucket and put in biography files: 
+   
+use **each.key** as object name, **each.value** as object content
 
-resource "aws_s3_bucket" "test-foreach" {
-  bucket = "luxoft-adm025-foreach-${random_string.suffix.result}"
-}
-
+````
 resource "aws_s3_bucket_object" "my-foreach-books" {
   bucket   = aws_s3_bucket.test-foreach.id
   for_each = local.books
@@ -51,3 +51,10 @@ resource "aws_s3_bucket_object" "my-foreach-books" {
   content      = each.value
   content_type = "plain/text"
 }
+````
+
+5. Review results in AWS Console
+
+6. Destroy infrastructure:
+   `terrafrom destroy`
+   
