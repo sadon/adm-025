@@ -21,7 +21,7 @@
 + Terraform [modules](./m1)
 - Extended HCL syntax
   + [For_each](./for1)
-  - [Dynamic](./dyn1)
+  + [Dynamic](./dyn1)
 + Miscellaneous
   + [Lifecycle management](./lifecycle1)
   + [Workspaces](./wspace1)
